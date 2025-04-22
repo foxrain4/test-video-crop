@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MP4 Animation Gallery</title>
+  <style>
+    body {
+      font-family: Georgia, serif;
+      background-color: #111;
+      color: #eee;
+      margin: 0;
+      padding: 2rem;
+    }
+    .gallery {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      max-width: 800px;
+      margin: auto;
+    }
+    .video-block {
+      background-color: #222;
+      border-radius: 12px;
+      padding: 1rem;
+      box-shadow: 0 0 12px rgba(0,0,0,0.5);
+    }
+    video {
+      width: 100%;
+      border-radius: 8px;
+    }
+    .caption {
+      margin-top: 0.5rem;
+      font-size: 1.1rem;
+      color: #ccc;
+    }
+
+    .video-3d {
+      width: 90%;
+      max-width: 600px;
+      border: none;
+      outline: none;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+      margin: 1.5rem auto;
+      display: block;
+      background-color: black;
+    }
+  </style>
+</head>
+<body>
+
+  <h1 style="text-align: center;">🎥 MP4 Video Gallery</h1>
+
+  <!-- Placeholder for your top link -->
+  <p style="text-align: center;">
+    <a href="https://www.captiongenerator.com/v/2308971/daeun-plays-parser-games-hitler-reacts-video" style="color: #88f; text-decoration: underline;">Click here for the full reference / explanation page</a>
+  </p>
+
+  <div class="gallery">
+    <div class="video-block">
+      <video src="picture1.mp4" controls muted loop></video>
+      <div class="caption">Testing volume sync — lips move, no sound delivered.</div>
+    </div>
+    <div class="video-block">
+      <video src="picture2.mp4" controls muted loop></video>
+      <div class="caption">Audio track mismatch. Hitler reacts before the punchline even lands.</div>
+    </div>
+    <div class="video-block">
+      <video src="picture3.mp4" controls muted loop></video>
+      <div class="caption">Timing glitch — subtitles appear after scene change.</div>
+    </div>
+    <div class="video-block">
+      <video src="picture4.mp4" controls muted loop></video>
+      <div class="caption">Frozen frame at the moment of rage. Possibly an encoding stall?</div>
+    </div>
+    <div class="video-block">
+      <video src="picture5.mp4" controls muted loop></video>
+      <div class="caption">Subtitle typo: "Anger management" becomes "Angler management".</div>
+    </div>
+    <div class="video-block">
+      <video src="picture6.mp4" controls muted loop></video>
+      <div class="caption">Overlay flickers mid-speech. Likely a frame timing misalignment.</div>
+    </div>
+    <div class="video-block">
+      <video src="picture7.mp4" controls muted loop></video>
+      <div class="caption">Exported at 60fps but behaves like 15fps. Playback issue or misconfigured render?</div>
+    </div>
+
+    <!-- 3D-like playback styles below -->
+    <video src="picture3.mp4" controls class="video-3d"></video>
+    <video src="picture7.mp4" controls class="video-3d"></video>
+
+    <video 
+      src="picture3.mp4" 
+      muted 
+      playsinline 
+      class="video-3d"
+      onclick="this.play()">
+    </video>
+
+    <video 
+      src="picture4.mp4" 
+      muted 
+      playsinline 
+      class="video-3d"
+      onclick="this.play()">
+    </video>
+  </div>
+
+</body>
+</html>
